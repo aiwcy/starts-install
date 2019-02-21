@@ -1,0 +1,8 @@
+sudo add-apt-repository ppa:apandada1/brightness-controller 
+sudo apt-get update 
+sudo apt-get install brightness-controller-simple
+
+执行完这些后，启动brightness-controller：
+
+$ brightness-controller-simple
+拖动移动条就可以调整亮度了，真是非常方便，这个方法简单实用，网上其他的方法有的感觉比较麻烦。
