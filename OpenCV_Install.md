@@ -21,3 +21,6 @@ sudo make -j8
 ```
 sudo make install
 ```
+
+##opencv3.3和opencv_contrib的编译安装
+https://blog.csdn.net/xiangxianghehe/article/details/78780269
