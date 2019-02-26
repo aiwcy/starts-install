@@ -24,3 +24,23 @@ sudo make install
 
 ##opencv3.3和opencv_contrib的编译安装
 https://blog.csdn.net/xiangxianghehe/article/details/78780269
+##编译安装过程中的问题
+在编译过程中会出现类似于下面的问题
+```
+The imported target "Qt5::Gui" references the file "/usr/lib/x86_64-linux-gnu/libEGL.so" but this file does not exist.
+```
+解决办法：
+```
+$ ls /usr/lib/x86_64-linux-gnu | grep -i libegl
+libEGL.so 
+libEGL.so.1 
+libEGL.so.346.59
+
+$ ls -l /usr/lib/x86_64-linux-gnu/libEGL.so
+lrwxrwxrwx 1 root root 18 mar 30 17:10 /usr/lib/x86_64-linux-gnu/libEGL.so -> mesa-egl/libEGL.so
+```
+或者cd到该目录下找到该文件，在zsh下面可以看到该文件是红色，可能是链接坏了，需要重新创建链接
+```
+sudo rm /usr/lib/x86_64-linux-gnu/libEGL.so
+sudo ln /usr/lib/x86_64-linux-gnu/libEGL.so.1 /usr/lib/x86_64-linux-gnu/libEGL.so
+```
