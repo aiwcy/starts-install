@@ -1,0 +1,6 @@
+* 刚装 spacemacs 时字体问题
+
+git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
+fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
+再刷新字体缓冲
+sudo fc-cache -f -v
