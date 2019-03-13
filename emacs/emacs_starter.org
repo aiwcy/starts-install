@@ -1,0 +1,10 @@
+* 从2019年03月13日开始重新使用emacs_purcell的配置
+从林老师的配置后在保存桌面后会报错，
+```
+报错就是Debugger entered--Lisp error: (error "Font `tty' is not defined")，
+```
+再谷歌之后解决办法如下
+```
+This error is happening while restoring a previously-saved Emacs desktop session. No idea where the font name "tty" could have come from: I've never seen that before. What Emacs version are you using, and have you been trying multiple versions? Try quitting Emacs, deleting the ~/.emacs.d/.emacs.desktop file, and then starting Emacs up again.
+```
+就是把.emacs.d/.emacs.desktop删了
