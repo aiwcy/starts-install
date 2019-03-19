@@ -1,0 +1,11 @@
+* pip安装包
+pip install --usering <package>
+不要用sudo
+
+* Pycharm 配置
+File -> Settings -> Project: *** -> Project Interpreter -> 选择python的路径（终端输入 whereis python 一般在/usr/bin/python2.7和/usr/bin/python23.5）
+- 添加后如果用pip安装的tensorflow在Python2.7下面
+
+** Pycharm中文注释
+    在程序头加入： #!/usr/bin/python
+                 # -*- coding:utf8 -*-

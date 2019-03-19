@@ -8,9 +8,14 @@
 cd 到文件中，新建build文件夹， 在build下新建installed文件夹。将文件安装到installed中方便管理。
 
 ```
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_TBB=ON -D WITH_V4L=ON -D CMAKE_INSTALL_PREFIX=/home/wcy/opencv-2.3.13.4/build/installed .. 
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_TBB=ON -D WITH_V4L=ON -D CMAKE_INSTALL_PREFIX=/home/wcy/opencv-2.3.13.4/installed .. 
 ```
 其中“CMAKE_INSTALL_PREFIX=”是安装的路径，注意“..”别忘了
+
+opencv3.3和opencv_contrib的编译
+```
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_TBB=ON -D WITH_V4L=ON -D CMAKE_INSTALL_PREFIX=/home/wcy/opencv-3.3.1/installed -D OPENCV_EXTRA_MODULES_PATH=/home/wcy/opencv-3.3.1/opencv_contrib-3.3.1/modules/  ..
+```
 
 ## 执行
 ```
@@ -23,7 +28,7 @@ sudo make install
 ```
 
 ##opencv3.3和opencv_contrib的编译安装
-https://blog.csdn.net/xiangxianghehe/article/details/78780269
+c
 ##编译安装过程中的问题
 在编译过程中会出现类似于下面的问题
 ```
