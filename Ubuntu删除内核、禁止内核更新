@@ -1,0 +1,4 @@
+1. uname -a     #查看内核信息
+2. sudo dpkg --get-selections | grep linux-image    #查看所有已安装及未安装内核的信息
+3. sudo apt remove linux-image-4.15.0-39-generic    #删除当前内核
+4. sudo apt-mark hold linux-image-4.15.0-38-generic #禁止内核更新，需要时间检验
