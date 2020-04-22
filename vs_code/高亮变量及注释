@@ -1,0 +1,17 @@
+vscode其实自带了更改项。
+
+在setting.json中添加如下字段即可，颜色可以自定义修改，选择自己喜欢的颜色即可。
+
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#d1d1c6",
+        "editor.selectionHighlightBackground": "#c5293e"
+    
+    }
+
+修改注释颜色，同样在setting.json中添加：可以选择自己需要的颜色即可
+
+    "editor.tokenColorCustomizations": {
+        "comments": "#82e0aa" // 注释
+      }
+
+
