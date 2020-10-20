@@ -14,4 +14,4 @@ XKBOPTIONS="ctrl:swapcaps"
 
 XKBOPTIONS="ctrl:nocaps"
 
-最后执行 sudodpkg-reconfigure keyboard-configuration
+最后执行 sudo dpkg-reconfigure keyboard-configuration
